@@ -1,1 +1,1 @@
-https://github.com/username/slozhno-sosredotochitsya-fd
+https://github.com/Katniss-kk/slozhno-sosredotochitsya-fd
