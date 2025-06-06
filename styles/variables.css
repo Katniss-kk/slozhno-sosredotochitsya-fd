@@ -9,7 +9,7 @@
   --medium-font: 400;
   --h2-color: #000028;
   --h1-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --h2-size: 18px; 
+  --h2-size: 18px;
   --h2-margin: 0 10px;
   --margin-inline-section: 10px;
 }
