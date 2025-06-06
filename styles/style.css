@@ -440,7 +440,7 @@ section .section__title {
     'section__title title__five'
     'section__title main__foure'
     'section__title title__six'
-    'section__title main__five'; 
+    'section__title main__five';
   }
 
   section:nth-child(3) .title__one {
@@ -563,6 +563,7 @@ section .section__title {
 
   section:nth-child(2) .section__title {
     margin-block-end: 20px;
+    margin-inline-start: 0;
   } 
 
   section:nth-child(2) {
@@ -584,10 +585,6 @@ section .section__title {
   section:nth-child(2) .title {
     width: 100%;
     margin: 0;
-  }
-
-  section:nth-child(2) .section__title {
-    margin-inline-start: 0;
   }
 
   .main__text {
