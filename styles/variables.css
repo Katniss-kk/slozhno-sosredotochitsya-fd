@@ -1,4 +1,15 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --bg-page: url(../images/cover-image-dark.png);
+  --bg-title: #FF0070;
+  --title-cover: #DB00FF;
+  --menu-color: #ff0070;
+  --link-color: #F1B2CE;
+  --menu-border: rgba(255, 112, 102, 0.4);
+  --bold-font: 700;
+  --medium-font: 400;
+  --h2-color: #000028;
+  --h1-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --h2-size: 18px; 
+  --h2-margin: 0 10px;
+  --margin-inline-section: 10px;
+}
