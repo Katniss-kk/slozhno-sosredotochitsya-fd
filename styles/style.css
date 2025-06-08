@@ -460,10 +460,6 @@ img {
     'img__tape img__street img__street';
   }
 
-  .section__multitasking {
-    margin-block-start: 60px;
-  }
-
 .footer {
   min-height: 1024px;
 }
@@ -522,17 +518,13 @@ img {
   }
 
   .section__concentrate {
-    column-gap: 15px;
+    column-gap: 10px;
   }
 
   .section__multitasking .section__title {
     margin-block-end: 20px;
     margin-inline-start: 0;
   } 
-
-  .section__concentrate {
-    column-gap: 10px;
-  }
 
   .section__multitasking {
     margin-block-start: 60px;
