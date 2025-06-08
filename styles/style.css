@@ -201,8 +201,8 @@ img {
 }
 
 .image__section {
-  margin-block-start: 48px;
   display: grid;
+  margin-block-start: 48px;
   grid-template-columns: repeat(1, minmax(250px, 1fr));
   padding-inline-start: 10px;
   padding-inline-end: 10px;
