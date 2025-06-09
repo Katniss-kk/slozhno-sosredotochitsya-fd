@@ -398,7 +398,6 @@ img {
 
   .section__concentrate {
     display: grid;
-    row-gap: 0;
     column-gap: 20px;
     row-gap: 20px;
     padding-inline-start: 20px;
