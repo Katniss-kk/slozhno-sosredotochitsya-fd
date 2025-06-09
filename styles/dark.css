@@ -20,6 +20,7 @@
   --decor-color: #FF0070;
   --main-color: #F1B2CE;
   --section-color: #FF0070;
+  --decoration-block: flex;
 }
 
 .theme-dark .page {

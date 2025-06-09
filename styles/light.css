@@ -13,7 +13,7 @@
   --menu-border: rgba(50, 49, 45, 0.4);
   --bold-font: 700;
   --medium-font: 400;
-  --section-title-color: #000028;
+  --section-title-color: #353430;
   --cover-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --section-title-size: 18px;
   --section-title-margin: 0 10px;
@@ -21,12 +21,7 @@
   --decor-color: #353430;
   --section-color: #353430;
   --main-color: #353430;
-}
-
-.theme-light .page {
-  .decoration {
-    display: none;
-  }
+  --decoration-block: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -39,12 +34,14 @@
   --menu-border: rgba(50, 49, 45, 0.4);
   --bold-font: 700;
   --medium-font: 400;
-  --section-title-color: #000028;
+  --section-title-color: #353430;
   --cover-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --section-title-size: 18px;
   --section-title-margin: 0 10px;
   --margin-inline-section: 10px;
-  --main-color  : #353430;
   --decor-color: #353430;
+  --section-color: #353430;
+  --main-color: #353430;
+  --decoration-block: none;
 }
 }
