@@ -326,15 +326,12 @@ img {
     grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
   }
 
-  .section__advice .section__title {
-    margin-block-end: 0;
-}
-
   .section__advice .title {
     grid-column: 2;
   }
 
   .section__advice .section__title {
+    margin-block-end: 0;
     grid-column: 1;
   }
 
