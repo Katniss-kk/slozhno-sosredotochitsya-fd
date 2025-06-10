@@ -24,6 +24,12 @@
   line-height: 23.4px;
 }
 
+.text-style {
+  font-weight: var(--bold-font);
+  font-size: var(--section-title-size);
+  line-height: 23.4px;
+}
+
 .decorated-zone::after {
   content: " ";
   position: absolute;
@@ -48,7 +54,7 @@
   width: 25px;
   height: 25px;
   left: 10px;
-  bottom: -55px;
+  bottom: 10px;
 }
 
 .cover__title {
@@ -62,8 +68,6 @@
 }
 
 .title {
-  font-weight: var(--bold-font);
-  font-size: var(--section-title-size);
   color: var(--section-title-color);
   background-color: var(--bg-title);
   width: 100%;
@@ -74,14 +78,6 @@
   justify-self: center;
   width: calc(100% - 20px);
   margin-block-start: 20px;
-}
-
-.title_margin {
-  margin-block-start: 20px;
-}
-
-.section__subtitle {
-  font-weight: var(--medium-font);
 }
 
 .decoration {
@@ -157,21 +153,17 @@
 }
 
 .section__title {
-  font-weight: var(--bold-font);
-  font-size: var(--section-title-size);
   color: var(--section-color);
-  grid-area: section__title;
 }
 
 .main__text {
   font-weight: var(--medium-font);
-  font-size: var(--section-title-size);
   margin-block-start: 10px;
   color: var(--main-color);
 }
 
 .text-shadow {
-  text-shadow: 1px 1px 0px var(--bg-title);
+  text-shadow: 2px 2px 0px var(--bg-title);
   text-decoration: none;
   color: var(--link-color);
 }
@@ -193,99 +185,46 @@ img {
   object-position: center;
 }
 
+.section__subtitle {
+  font-weight: var(--medium-font);
+  margin-block-start: 20px;
+}
+
+.section__advice .section__title {
+  margin-block-end: 20px;
+}
+
 .section__concentrate {
   display: grid;
-  line-height: 23.4px;
   row-gap: 20px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
   justify-items: flex-start;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fit, minmax(40px, 1fr));
-  grid-template-areas: 
-  'section__title'
-  'section_title_main'
-  'section_title_dopamine'
-  ;
 }
 
 .section__multitasking {
   margin-block-start: 50px;
   display: grid;
-  line-height: 23.4px;
   row-gap: 20px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
   justify-items: flex-start;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fit, minmax(40px, 1fr));
-  grid-template-areas: 
-  'section__title'
-  'section_title_main'
-  'section_title_dopamine'
-  'section_title_gadgets'
-  ;
 }
 
 .section__advice {
   margin-block-start: 48px;
   display: grid;
-  line-height: 23.4px;
-  row-gap: 20px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
   justify-items: flex-start;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fit, minmax(40px, 1fr));
-  grid-template-areas: 
-  'section__title'
-  'section_title_main'
-  'section_title_gadgets'
-  'section_title_walk'
-  'section_title_food'
-  'section_title_read'
-  ;
 }
 
 .image__section {
   display: grid;
-  line-height: 23.4px;
   margin-block-start: 48px;
-  grid-template-columns: repeat(1, minmax(250px, 1fr));
   padding-inline-start: 10px;
   padding-inline-end: 10px;
   gap: 10px;
-  grid-template-areas: 
-  'section_title_main'
-  'img__sunset'
-  'img__ice-cream'
-  'img__tape'
-  'img__books'
-  'img__street'
-}
-
-.image__section .title {
-  margin: initial;
-}
-
-.img__sunset {
-  grid-area: img__sunset;
-}
-
-.img__ice-cream {
-  grid-area: img__ice-cream;
-}
-
-.img__tape {
-  grid-area: img__tape;
-}
-
-.img__books {
-  grid-area: img__books;
-}
-
-.img__street {
-  grid-area: img__street;
 }
 
 .footer {
@@ -297,11 +236,6 @@ img {
   margin-block-start: 40px;
 }
 
-.footer .decorated-zone::before {
-  left: 10px;
-  bottom: 10px;
-}
-
 .footer__title {
   font-weight: var(--bold-font);
   font-size: var(--cover-title-size);
@@ -310,44 +244,10 @@ img {
   line-height: 83%;
 }
 
-.section_title_main {
-  grid-area: section_title_main;
-}
-
-.section_title_dopamine {
-  grid-area: section_title_dopamine;
-  font-weight: var(--medium-font);
-}
-
-.section_title_gadgets {
-  grid-area: section_title_gadgets;
-  font-weight: var(--medium-font);
-}
-
-.section_title_walk {
-  grid-area: section_title_walk;
-  font-weight: var(--medium-font);
-}
-
-.section_title_food {
-  grid-area: section_title_food;
-  font-weight: var(--medium-font);
-}
-
-.section_title_read {
-  grid-area: section_title_read;
-  font-weight: var(--medium-font);
-} 
-
 @media (width >= 768px) {
-
-  .page {
-    min-width: 768px;
-  }
 
   .header {
     justify-content: initial;
-    min-width: 768px;
     min-height: 1024px;
     margin-block-end: 60px;
   }
@@ -366,10 +266,6 @@ img {
     margin-block-start: 10px;
     margin-inline-end: 10px;
   }
-  
-  .header__theme-menu-list {
-    gap: 15px;
-  }
 
   .header__theme-menu {
     align-self: center;
@@ -378,7 +274,6 @@ img {
 
   .header__title {
     width: 364px;
-    min-height: 117px;
     justify-self: flex-end;
     align-self: auto;
     margin-inline-end: 20px;
@@ -397,107 +292,102 @@ img {
   }
 
   .section__concentrate {
-    display: grid;
-    column-gap: 20px;
-    row-gap: 20px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
-    justify-items: flex-start;
+    column-gap: 20px;
+    grid-auto-flow: column;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
-    grid-template-areas: 
-    'section__title section_title_main'
-    'section__title section_title_dopamine'
-    ;
+    grid-template-rows: auto;
+  }
+
+  .section__concentrate .section__title {
+    grid-column: 1;
+  }
+
+  .section__concentrate .section_title_main {
+    grid-column: 2;
   }
 
   .section__multitasking {
-    margin-block-start: 78px;
-    display: grid;
-    row-gap: 20px;
+    margin-block-start: 80px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
-    justify-items: flex-start;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(40px, 1fr));
-    grid-template-areas: 
-    'section__title'
-    'section_title_main'
-    'section_title_dopamine'
-    'section_title_gadgets'
-    ;
-  }
-
-  .section__multitasking .section__title {
-    margin-block-end: 25px;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
   }
 
   .section__advice {
     margin-block-start: 80px;
-    display: grid;
-    row-gap: 20px;
-    column-gap: 20px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
-    justify-items: flex-start;
+    column-gap: 20px;
+    grid-auto-flow: column;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
-    grid-template-areas: 
-    'section__title section_title_main'
-    'section__title section_title_gadgets'
-    'section__title section_title_walk'
-    'section__title section_title_food'
-    'section__title section_title_read'
-  ;
+    grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+  }
+
+  .section__advice .section__title {
+    margin-block-end: 0;
+}
+
+  .section__advice .title {
+    grid-column: 2;
+  }
+
+  .section__advice .section__title {
+    grid-column: 1;
+  }
+
+  .section__advice .section_title_main {
+    grid-column: 2;
   }
 
   .image__section {
     margin-block-start: 80px;
-    display: grid;
-    gap: 20px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-    grid-template-areas: 
-    'section_title_main section_title_main section_title_main'
-    'img__sunset img__sunset img__ice-cream'
-    'img__tape img__books img__ice-cream'
-    'img__tape img__street img__street';
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
   }
 
-.footer {
-  min-height: 1024px;
-  margin-block-start: 60px;
-}
+  .image__section .title {
+    grid-column: 1 / 4;
+  }
 
-.footer .decorated-zone::before {
-  left: 20px;
-  bottom: 20px;
-}
+  .img__sunset {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
 
-.footer .decorated-zone::after {
-  right: 20px;
-  top: 20px;
-}
+  .img__ice-cream {
+    grid-column: 3;
+    grid-row: 2 / 4;
+  }
+
+  .img__tape {
+    grid-column: 1;
+    grid-row: 3 / 5;
+  }
+
+  .img__books {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .img__street {
+    grid-column: 2 / 4;
+    grid-row: 4;
+  }
+
+  .footer {
+    min-height: 1024px;
+    margin-block-start: 60px;
+  }
 
 }
 @media (width >= 1024px) {
-  .page {
-    min-width: 1024px;
-  }
-
-  .header .decorated-zone::after {
-    top: 20px;
-    right: 20px;
-  }
-
-  .header .decorated-zone::before {
-    bottom: 20px;
-    left: 20px;
-  }
-
   .header {
-    min-width: 1024px;
     min-height: 768px;
   }
 
@@ -509,7 +399,6 @@ img {
   }
 
   .header__theme-menu-list {
-    display: flex;
     flex-direction: row;
     gap: 10px;
   }
@@ -521,51 +410,26 @@ img {
 
   .header__title {
     width: 491px;
-    min-height: initial;
     margin-block-start: 45px;
-    margin-block-end: 0px;
   }
 
   .section__concentrate {
     column-gap: 10px;
   }
 
-  .section__multitasking .title {
-    width: 100%;
-    margin: 0;
-  }
-
-  .section__multitasking {
-  margin-block-start: 78px;
-  display: grid;
-  row-gap: 20px;
-  column-gap: 20px;
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
-  justify-items: flex-start;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(auto-fit, minmax(40px, 1fr));
-  grid-template-areas: 
-  'section__title section__title section__title'
-  'section_title_main section_title_dopamine section_title_gadgets'
-  ;
-  }
-
-  .section__multitasking .section__title {
-    margin-block-end: 0;
-  }
-
   .section__advice {
     column-gap: 10px;
   }
 
-  .main__text {
-    margin-inline-end: initial;
-    margin-inline-start: initial;
+  .section__multitasking {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
   }
 
-  .image__section {
-    grid-template-columns: repeat(1, minmax(315px, 1fr));
+  .section__multitasking .section__title {
+    grid-column: 1 / 4;
+    grid-row: 1;
   }
 
   .footer {
@@ -575,16 +439,5 @@ img {
 
   .footer__title {
     font-size: 157px;
-    margin-block-start: 0;
-  }
-
-  .footer .decorated-zone::after {
-    top: 20px;
-    right: 20px;
-  }
-
-  .footer .decorated-zone::before {
-    left: 20px;
-    bottom: 20px;
   }
 }
