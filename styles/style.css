@@ -194,7 +194,7 @@ img {
   margin-block-end: 20px;
 }
 
-.section__concentrate {
+.section {
   display: grid;
   row-gap: 20px;
   padding-inline-start: 10px;
@@ -204,26 +204,15 @@ img {
 
 .section__multitasking {
   margin-block-start: 50px;
-  display: grid;
-  row-gap: 20px;
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;
-  justify-items: flex-start;
 }
 
 .section__advice {
   margin-block-start: 48px;
-  display: grid;
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;
-  justify-items: flex-start;
+  gap: 0;
 }
 
 .image__section {
-  display: grid;
   margin-block-start: 48px;
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;
   gap: 10px;
 }
 
@@ -291,10 +280,15 @@ img {
     margin-block-start: 10px;
   }
 
-  .section__concentrate {
+  .section {
+    margin-block-start: 80px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
-    column-gap: 20px;
+    gap: 20px;
+  }
+
+  .section__concentrate {
+    margin-block-start: 0;
     grid-auto-flow: column;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
@@ -309,21 +303,20 @@ img {
   }
 
   .section__multitasking {
-    margin-block-start: 80px;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
     grid-auto-flow: row;
-    grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-rows: auto;
+  }
+
+  .section__multitasking .section__title {
+    width: 30%;
   }
 
   .section__advice {
-    margin-block-start: 80px;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
-    column-gap: 20px;
     grid-auto-flow: column;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-rows: auto;
+    gap: 0;
+    column-gap: 20px;
   }
 
   .section__advice .title {
@@ -340,10 +333,6 @@ img {
   }
 
   .image__section {
-    margin-block-start: 80px;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
-    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
@@ -414,19 +403,18 @@ img {
     column-gap: 10px;
   }
 
-  .section__advice {
-    column-gap: 10px;
-  }
-
+  
   .section__multitasking {
-    grid-template-rows: auto;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
   }
-
+  
   .section__multitasking .section__title {
     grid-column: 1 / 4;
     grid-row: 1;
+  }
+
+  .section__advice {
+    column-gap: 10px;
   }
 
   .footer {
